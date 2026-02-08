@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "What I’ve been listening to lately: Jan. 26"
+title:  "Jan. ‘26: What I’ve been listening to lately"
 date:   2026-01-31
 categories: music
 image: /assets/img/ninajirachi-i-love-my-computer.jpg
 ---
 
-# What I’ve been listening to lately: Jan. 26
+# What I’ve been listening to lately: Jan. ‘26
 
 ### Ninajirachi - *I love my computer*
 ![Ninajirachi - I love my computer cover art](https://f4.bcbits.com/img/a0649909828_10.jpg)

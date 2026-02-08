@@ -73,7 +73,7 @@ footer.grid-row {
   padding: 2rem 0;
   border-top: 1px solid var(--border); // Horizontal line separation 
   h2 { margin-top: 0; }
-  img { width: 100%; height: auto; display: block; }
+  img { width: 100%; height: auto; max-height: 400px; display: block; object-fit: cover; }
 }
 
 // Footer Logic
