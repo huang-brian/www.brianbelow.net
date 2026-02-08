@@ -1,39 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>{{ page.title }} | Brian Below</title>
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 </head>
 <body>
 
-<div class="layout-wrapper">
-  <nav class="sidebar">
-    <a href="/">Home</a><br>
-    <a href="/about">About</a><br>
-    <a href="/2026">2026</a>
-  </nav>
+<div class="site-container">
+  <header class="grid-row header-block">
+    <nav class="nav-links">
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/2026">2026</a>
+    </nav>
 
-  <main>
-    <header>
+    <div class="site-title-area">
       <h1>Brian Below</h1>
       <p>musings on life.</p>
-    </header>
+    </div>
+  </header>
 
+  <main>
     {{ content }}
   </main>
-</div>
 
-<footer>
-  <div><strong>Brian<br>Below</strong></div>
-  <div>
-    <button>Subscribe</button><br>
-    <small>Receive new posts in your email.</small>
-  </div>
-  <div style="text-align: right;">
-    Published in Santa Cruz, California<br>
-    Say hi: <a href="mailto:hey@brianbelow.net">hey@brianbelow.net</a>
-  </div>
-</footer>
+  <footer class="grid-row">
+    <div class="footer-column">
+      <strong>Brian<br>Below</strong>
+      <div class="contact-info">
+        Say hi: <a href="mailto:hey@brianbelow.net">hey@brianbelow.net</a>
+      </div>
+    </div>
+
+    <div class="footer-column subscribe-section">
+      <button>Subscribe</button>
+      <span>Receive new posts in your email.</span>
+    </div>
+
+    <div class="footer-column meta-info">
+      Published in Santa Cruz, California<br>
+      Hosted on GitHub Pages
+    </div>
+  </footer>
+</div>
 
 </body>
 </html>

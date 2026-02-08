@@ -3,7 +3,7 @@ layout: default
 ---
 
 {% for post in site.posts %}
-  <section class="post-row">
+  <section class="grid-row post-row">
     <div>
       <h2>{{ post.title }}</h2>
       <p>{{ post.description }}</p>
@@ -11,9 +11,11 @@ layout: default
     
     <div>
       {% if post.image %}
-        <img src="{{ post.image }}" alt="{{ post.title }}">
+        <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
       {% else %}
-        <p><em>{{ post.excerpt | strip_html | truncatewords: 50 }}</em></p>
+        <div class="excerpt">
+          <em>{{ post.excerpt | strip_html | truncatewords: 50 }}</em>
+        </div>
       {% endif %}
     </div>
   </section>
