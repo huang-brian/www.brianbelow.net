@@ -68,6 +68,25 @@ footer.grid-row {
   }
 }
 
+// Home header - preserve this styling for home page even if default changes
+.home-header {
+  display: grid;
+  grid-template-columns: 1fr 2fr; // span 1/3 and span 2/3
+  gap: 4rem;
+  margin-bottom: 4rem;
+  
+  .nav-links a {
+    display: block;
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+  }
+  
+  h1 { 
+    margin: 0; 
+    font-size: 3.5rem; 
+  }
+}
+
 // Post Link Wrapper
 .post-link {
   display: block;
@@ -156,13 +175,45 @@ footer {
 }
 
 // Mobile Responsiveness
-@media (max-width: 800px) {
-  .grid-row { grid-template-columns: 1fr; gap: 2rem; }
-  footer.grid-row { grid-template-columns: 1fr; }
-  footer .meta-info { text-align: left; }
+@media (max-width: 768px) {
+  .site-container {
+    padding: 2rem 1rem;
+  }
+  
+  .grid-row { 
+    grid-template-columns: 1fr; 
+    gap: 2rem; 
+  }
+  
+  footer.grid-row { 
+    grid-template-columns: 1fr; 
+  }
+  
+  footer .meta-info { 
+    text-align: left; 
+  }
+  
   footer .subscribe-section { 
     align-items: flex-start;
     text-align: left;
+  }
+  
+  .header-block h1 {
+    font-size: 2.5rem;
+  }
+  
+  .header-block .page-title {
+    font-size: 2rem;
+  }
+  
+  // Preserve home header layout on mobile
+  .home-header {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    
+    h1 {
+      font-size: 2.5rem;
+    }
   }
 }
 
