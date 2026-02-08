@@ -61,6 +61,11 @@ footer.grid-row {
     font-size: 1.1rem;
   }
   h1 { margin: 0; font-size: 3.5rem; }
+  .page-title { /* page title used on non-home pages */
+    margin: 0;
+    font-size: 2.5rem;
+    text-align: left;
+  }
 }
 
 // Post Link Wrapper
