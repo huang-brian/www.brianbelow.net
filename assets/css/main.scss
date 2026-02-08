@@ -116,6 +116,40 @@ footer {
   .meta-info { text-align: right; font-size: 0.85rem; }
 }
 
+// Blog Post Article Layout
+.blog-post {
+  max-width: 800px;
+  margin: 0 auto;
+  
+  .blog-post-content {
+    line-height: 1.8;
+    
+    h2, h3, h4 {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+    
+    p {
+      margin: 1rem 0;
+    }
+    
+    img {
+      width: 100%;
+      height: auto;
+      margin: 2rem 0;
+      display: block;
+    }
+  }
+  
+  .post-meta {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+    color: var(--text);
+    opacity: 0.7;
+  }
+}
+
 // Mobile Responsiveness
 @media (max-width: 800px) {
   .grid-row { grid-template-columns: 1fr; gap: 2rem; }
