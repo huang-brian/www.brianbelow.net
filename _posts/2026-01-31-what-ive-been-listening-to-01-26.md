@@ -13,7 +13,7 @@ image: /assets/img/ninajirachi-i-love-my-computer.jpg
 also — Fuck my computer - Frost Children remix
 
 ### Pedro Sampaio - *SEQUÊNCIAS #1*
-![Pedro Sampaio - SEQUÊNCIAS #1 cover art(https://i.scdn.co/image/ab67616d0000b273dac6e6dd6c1fd136bb506b2c)
+![Pedro Sampaio - SEQUÊNCIAS #1 cover art](https://i.scdn.co/image/ab67616d0000b273dac6e6dd6c1fd136bb506b2c)
    Literally every song on this album is a banger. But if I had to pick one, it would be Sequencia Cunt. They way they get that bass distortion on “Sequencia Striptease” is incredible.
 
 ### Sevdaliza - *HEROINA*
