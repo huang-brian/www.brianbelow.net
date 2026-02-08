@@ -3,20 +3,22 @@ layout: default
 ---
 
 {% for post in site.posts %}
-  <section class="grid-row post-row">
-    <div>
-      <h2>{{ post.title }}</h2>
-      <p>{{ post.description }}</p>
-    </div>
-    
-    <div>
-      {% if post.image %}
-        <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
-      {% else %}
-        <div class="excerpt">
-          <em>{{ post.excerpt | strip_html | truncatewords: 50 }}</em>
-        </div>
-      {% endif %}
-    </div>
-  </section>
+  <a href="{{ post.url | relative_url }}" class="post-link">
+    <section class="grid-row post-row">
+      <div>
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.description }}</p>
+      </div>
+      
+      <div>
+        {% if post.image %}
+          <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+        {% else %}
+          <div class="excerpt">
+            <em>{{ post.excerpt | strip_html | truncatewords: 50 }}</em>
+          </div>
+        {% endif %}
+      </div>
+    </section>
+  </a>
 {% endfor %}
