@@ -64,6 +64,22 @@ footer.grid-row {
   text-align: left;
 }
 
+.home-header {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+  margin-bottom: 4rem;
+}
+.home-header .nav-links a {
+  display: block;
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+}
+.home-header h1 {
+  margin: 0;
+  font-size: 3.5rem;
+}
+
 .post-link {
   display: block;
 }
@@ -152,7 +168,10 @@ footer .meta-info {
   opacity: 0.7;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
+  .site-container {
+    padding: 2rem 1rem;
+  }
   .grid-row {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -166,6 +185,19 @@ footer .meta-info {
   footer .subscribe-section {
     align-items: flex-start;
     text-align: left;
+  }
+  .header-block h1 {
+    font-size: 2.5rem;
+  }
+  .header-block .page-title {
+    font-size: 2rem;
+  }
+  .home-header {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .home-header h1 {
+    font-size: 2.5rem;
   }
 }
 /* Specific styling for text-heavy pages like About */
