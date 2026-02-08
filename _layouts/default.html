@@ -13,7 +13,21 @@
 <body>
 
 <div class="site-container">
-  {{ content }}
+  <header class="grid-row header-block">
+    <nav class="nav-links">
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/2026">2026</a>
+    </nav>
+
+    <div class="site-title-area">
+      <h1 class="page-title">{{ page.title }}</h1>
+    </div>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
 
   <footer class="grid-row">
     <div class="footer-column">
