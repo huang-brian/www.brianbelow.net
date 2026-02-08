@@ -1,5 +1,5 @@
 ---
-layout: blog-post
+layout: default
 title: "A much longer title: Or, how I learned to..."
 description: "a description here"
 ---

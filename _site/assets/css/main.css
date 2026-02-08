@@ -143,6 +143,7 @@ footer .meta-info {
 .blog-post {
   max-width: 800px;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 .blog-post .blog-post-content {
   line-height: 1.8;
@@ -205,6 +206,7 @@ footer .meta-info {
   max-width: 800px; /* Keeps lines of text from getting too long */
   line-height: 1.8;
   margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
 /*# sourceMappingURL=main.css.map */
