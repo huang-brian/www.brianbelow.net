@@ -47,6 +47,11 @@ a {
   margin-bottom: 2rem;
 }
 
+// Override footer grid to 3 equal columns
+footer.grid-row {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 // Header Specifics
 .header-block {
   margin-bottom: 4rem;
@@ -72,6 +77,13 @@ footer {
   padding-top: 3rem;
   margin-top: 4rem;
   
+  .footer-title {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
   .contact-info { margin-top: 1.5rem; font-size: 0.9rem; }
   
   .subscribe-section {
@@ -96,7 +108,8 @@ footer {
 // Mobile Responsiveness
 @media (max-width: 800px) {
   .grid-row { grid-template-columns: 1fr; gap: 2rem; }
-  .meta-info { text-align: left; }
+  footer.grid-row { grid-template-columns: 1fr; }
+  footer .meta-info { text-align: left; }
 }
 
 /* Specific styling for text-heavy pages like About */
