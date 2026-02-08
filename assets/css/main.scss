@@ -116,6 +116,10 @@ footer {
   .grid-row { grid-template-columns: 1fr; gap: 2rem; }
   footer.grid-row { grid-template-columns: 1fr; }
   footer .meta-info { text-align: left; }
+  footer .subscribe-section { 
+    align-items: flex-start;
+    text-align: left;
+  }
 }
 
 /* Specific styling for text-heavy pages like About */
