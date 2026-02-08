@@ -1,0 +1,8 @@
+title: Brian Below
+description: musings on life.
+baseurl: "" 
+url: "https://www.brianbelow.net"
+
+# Formatting
+markdown: kramdown
+permalink: /:year/:title/
