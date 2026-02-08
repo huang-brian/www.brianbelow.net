@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap");
+:root {
+  --bg: #EFE6EB;
+  --text: #380D25;
+  --border: rgba(56, 13, 37, 0.2);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #380D25;
+    --text: #EFE6EB;
+    --border: rgba(239, 230, 235, 0.2);
+  }
+}
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: "Nanum Myeongjo", serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.2s;
+}
+a:hover {
+  opacity: 0.7;
+}
+
+.site-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.grid-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+  margin-bottom: 2rem;
+}
+
+footer.grid-row {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.header-block {
+  margin-bottom: 4rem;
+}
+.header-block .nav-links a {
+  display: block;
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+}
+.header-block h1 {
+  margin: 0;
+  font-size: 3.5rem;
+}
+.header-block .page-title { /* page title used on non-home pages */
+  margin: 0;
+  font-size: 2.5rem;
+  text-align: left;
+}
+
+.post-link {
+  display: block;
+}
+
+.post-row {
+  padding: 2rem 0;
+  border-top: 1px solid var(--border);
+}
+.post-row h2 {
+  margin-top: 0;
+}
+.post-row img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  display: block;
+  object-fit: cover;
+}
+
+footer {
+  border-top: 1px solid var(--border);
+  padding-top: 3rem;
+  margin-top: 4rem;
+}
+footer .footer-title {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+footer .contact-info {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+footer .subscribe-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+footer .subscribe-section button {
+  padding: 0.5rem 1.5rem;
+  background: transparent;
+  border: 1px solid var(--text);
+  color: var(--text);
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+footer .subscribe-section button:hover {
+  background: var(--text);
+  color: var(--bg);
+}
+footer .meta-info {
+  text-align: right;
+  font-size: 0.85rem;
+}
+
+.blog-post {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.blog-post .blog-post-content {
+  line-height: 1.8;
+}
+.blog-post .blog-post-content h2, .blog-post .blog-post-content h3, .blog-post .blog-post-content h4 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.blog-post .blog-post-content p {
+  margin: 1rem 0;
+}
+.blog-post .blog-post-content img {
+  width: 100%;
+  height: auto;
+  margin: 2rem 0;
+  display: block;
+}
+.blog-post .post-meta {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  color: var(--text);
+  opacity: 0.7;
+}
+
+@media (max-width: 800px) {
+  .grid-row {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  footer.grid-row {
+    grid-template-columns: 1fr;
+  }
+  footer .meta-info {
+    text-align: left;
+  }
+  footer .subscribe-section {
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+/* Specific styling for text-heavy pages like About */
+.page-content {
+  max-width: 800px; /* Keeps lines of text from getting too long */
+  line-height: 1.8;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=main.css.map */
