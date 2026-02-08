@@ -4,6 +4,7 @@ title:  "What I’ve been listening to lately: Jan. ‘26"
 date:   2026-01-31
 categories: music
 image: /assets/img/ninajirachi-i-love-my-computer.jpg
+Description: Ninajirachi, Pedro Sampaio, and more
 ---
 
 # Jan. ‘26: What I’ve been listening to lately
